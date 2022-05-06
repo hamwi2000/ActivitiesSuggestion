@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     public void display(View view) {
         if (mCurrentIndex < Activities.length) {
             Log.d(TAG, "display= " + mCurrentIndex);
-            mCurrentIndex= mRandom.nextInt(10);
+            mCurrentIndex= mRandom.nextInt(Activities.length);
             showImage();
         } else {
             Toast.makeText(this, "there are more activities", Toast.LENGTH_SHORT).show();
